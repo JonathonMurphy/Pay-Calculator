@@ -1,21 +1,26 @@
-var hourlyRate;
-var salaryRate;
-var hoursPerWeek;
-var weeksPerYear;
+var hourlyRate = 9.25;
+var salaryRate = 37000;
+var hoursPerWeek =30;
+var weeksPerYear = 52;
+var hoursPerYear;
 var hourlyToSalaryRate;
 var salaryToHourlyRate;
 
 function totalHours(hoursPerWeek, weeksPerYear){
-  var totalHours = hoursPerWeek * weeksPerYear;
-  return totalHours
+  hoursPerYear = hoursPerWeek * weeksPerYear;
+  return hoursPerYear;
 }
 
-function hourlyToSalary(totalHours, hourly){
-  hourlyToSalaryRate = totalHours * hourlyRate;
+function hourlyToSalary(hoursPerYear, hourlyRate){
+  hourlyToSalaryRate = hoursPerYear * hourlyRate;
   return hourlyToSalaryRate;
 }
 
-function salaryToHourly(totalHours, salaryRate){
-  salaryToHourlyRate = salaryRate / totalHours;
+function salaryToHourly(hoursPerYear, salaryRate){
+  salaryToHourlyRate = salaryRate / hoursPerYear;
   return salaryToHourlyRate;
 }
+
+totalHours(hoursPerWeek, weeksPerYear);
+hourlyToSalary(hoursPerYear, hourlyRate);
+salaryToHourly(hoursPerYear, salaryRate);
