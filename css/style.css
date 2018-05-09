@@ -1,0 +1,13 @@
+body{
+
+}
+
+.outer-container{
+  margin: 10px;
+  padding-bottom: 320px;
+  background-color: #91dc82;
+}
+
+.inner-container {
+  padding-top: 15%;
+}
