@@ -2,7 +2,7 @@
 
 This is a webpage that converts hourly to salary pay rates and vice versa. It breaks it down into per hour, day, week, and month.
 
-![alt text](img/screenshot.jpg?raw=true "Title")
+![alt text](img/screenshot.png?raw=true "Title")
 
 ## Setup
 
